@@ -6,10 +6,10 @@ Stencyl extension for “Extension Support”  for iOS and Android. This extensi
 
 ## Importent
 
-Download, Install and Enable this extension to get the following extension to work:
-–AppLovin<br>
-–Leadbolt<br> 	
-–Tapdaq<br> 	
+Download, Install and Enable this extension to get the following extension to work:<br>
+–AppLovin<br> 
+–Leadbolt<br> 
+–Tapdaq<br> 
 –Webview2.0<br> 
 –Vungle<br> 
 –StartApp<br> 

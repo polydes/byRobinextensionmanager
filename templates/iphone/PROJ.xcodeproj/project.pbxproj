@@ -19,6 +19,8 @@
 		1EEEBAB5121AF2880048A9DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEEBAB4121AF2880048A9DF /* CoreGraphics.framework */; };
 		1EEEBAFC121BE2980048A9DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEEBAFB121BE2980048A9DF /* AudioToolbox.framework */; };
 		1EEEBAFE121BE2980048A9DF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEEBAFD121BE2980048A9DF /* AVFoundation.framework */; };
+		F2336A411D94687900C9E785 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2336A401D94687900C9E785 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F2336A431D946A5F00C9E785 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2336A421D946A5F00C9E785 /* GLKit.framework */; };
 		1EEEBB00121BE2B30048A9DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEEBAFF121BE2B30048A9DF /* Foundation.framework */; };
 		1EF0A83A121ADB8E003F2F59 /* Main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EF0A839121ADB8E003F2F59 /* Main.mm */; };
 		4257533F1A5EFD8C004AA45B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4257533E1A5EFD8C004AA45B /* Images.xcassets */; };
@@ -70,6 +72,8 @@
 		1EEEBAFF121BE2B30048A9DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1EF0A839121ADB8E003F2F59 /* Main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.mm; path = "::APP_FILE::/Classes/Main.mm"; sourceTree = SOURCE_ROOT; };
 		4257533E1A5EFD8C004AA45B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "::APP_FILE::/Images.xcassets"; sourceTree = "<group>"; };
+		F2336A401D94687900C9E785 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		F2336A421D946A5F00C9E785 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 
         ::if ENV_VUNGLE_ENABLED::
         41730DBC1BFF5B1000A82A87 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			files = (
 				::if ARMV6::1EF0A888121AE2F0003F2F59 /* lib/ApplicationMain.a in lib */,::end::
 				::if ARMV7::1EF0A888121AE2F0003F2F5A /* lib/ApplicationMain-v7.a in lib */,::end::
+				F2336A411D94687900C9E785 /* SafariServices.framework in Frameworks */,
+				F2336A431D946A5F00C9E785 /* GLKit.framework in Frameworks */,
 				1EEEBA9B121AF1C60048A9DF /* UIKit.framework in Frameworks */,
 				1EEEBAA3121AF2210048A9DF /* OpenAL.framework in Frameworks */,
 				1EEEBAA5121AF2210048A9DF /* OpenGLES.framework in Frameworks */,
@@ -112,6 +118,9 @@
 				1EEEBAB3121AF2880048A9D0 /* CoreMotion.framework in Frameworks */,
 				1EEEBAB3121AF2880048A9D1 /* MediaPlayer.framework in Frameworks */,
                 ::if ENV_VUNGLE_ENABLED::41730DC91BFF5B1000A82A87 /* VungleSDK.framework in Frameworks */,::end::
+                ::if ENV_VUNGLE_ENABLED::415EE1A41D9713F700651591 /* FYBHZMediationTestSuiteEF.framework in Frameworks */,
+                415EE1A31D9713F700651591 /* Fyber_HyprMX_4.1.0.68-r1.framework in Frameworks */,
+                ::end::
 				::ADDL_PBX_FRAMEWORKS_BUILD_PHASE::
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +147,8 @@
 		1EEEBA99121AF18B0048A9DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2336A401D94687900C9E785 /* SafariServices.framework */,
+				F2336A421D946A5F00C9E785 /* GLKit.framework */,
 				1EEEBA9A121AF1C60048A9DF /* UIKit.framework */,
 				1EEEBAA2121AF2210048A9DF /* OpenAL.framework */,
 				1EEEBAA4121AF2210048A9DF /* OpenGLES.framework */,
@@ -214,6 +225,7 @@
             sourceTree = "<group>";
         };
         ::end::
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,6 +269,13 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						::if DEVELOPMENT_TEAM_ID::DevelopmentTeam = ::DEVELOPMENT_TEAM_ID::;::end::
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "::APP_TITLE::" */;
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
@@ -378,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
                 ENABLE_BITCODE = NO;
+                ::if DEVELOPMENT_TEAM_ID::DEVELOPMENT_TEAM = ::DEVELOPMENT_TEAM_ID::;::end::
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					::foreach frameworkSearchPaths:: "\"::__current__::\"",
@@ -431,6 +451,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
                 ENABLE_BITCODE = NO;
+                ::if DEVELOPMENT_TEAM_ID::DEVELOPMENT_TEAM = ::DEVELOPMENT_TEAM_ID::;::end::
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					::foreach frameworkSearchPaths:: "\"::__current__::\"",

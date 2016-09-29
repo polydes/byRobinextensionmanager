@@ -24,6 +24,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>::APP_BUILD_NUMBER::</string>
+	::if ENV_SIMPLESHARE_ENABLED::<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to photos.</string>::end::
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -35,9 +35,6 @@
         41730DC91BFF5B1000A82A87 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41730DC21BFF5B1000A82A87 /* VungleSDK.framework */; };
         ::end::
 
-        ::if ENV_UNITYADS_ENABLED::418BF73A1B72AC39005E76D8 /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 418BF7391B72AC39005E76D8 /* UnityAds.bundle */; };
-        ::end::
-
         ::if ENV_STARTAPP_ENABLED::419361371CA57F6200649587 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 419361361CA57F6200649587 /* StartApp.bundle */; };
         ::end::
 
@@ -83,9 +80,6 @@
         41730DC01BFF5B1000A82A87 /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
         41730DC11BFF5B1000A82A87 /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
         41730DC21BFF5B1000A82A87 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
-        ::end::
-
-        ::if ENV_UNITYADS_ENABLED::418BF7391B72AC39005E76D8 /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UnityAds.bundle ; path = "::APP_FILE::/Classes/UnityAds.bundle"; sourceTree = "<group>"; };
         ::end::
 
         ::if ENV_STARTAPP_ENABLED::419361361CA57F6200649587 /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = StartApp.bundle ; path = "::APP_FILE::/Classes/StartApp.bundle"; sourceTree = "<group>"; };
@@ -192,7 +186,6 @@
 				4257533E1A5EFD8C004AA45B /* Images.xcassets */,
 				8D1107310486CEB800E47090 /* ::APP_FILE::/::APP_FILE::-Info.plist */,
 				1E2E17A5131E8B5D0048F3C7 /* ::APP_FILE::/assets */,
-                ::if ENV_UNITYADS_ENABLED::418BF7391B72AC39005E76D8 /* UnityAds.bundle */,::end::
                 ::if ENV_STARTAPP_ENABLED::419361361CA57F6200649587 /* StartApp.bundle */,::end::
 			);
 			name = Resources;
@@ -296,7 +289,6 @@
 			files = (
 				1E2E17AD131E8B5D0048F3C7 /* ::APP_FILE::/assets in Resources */,
 				4257533F1A5EFD8C004AA45B /* Images.xcassets in Resources */,
-                ::if ENV_UNITYADS_ENABLED::418BF73A1B72AC39005E76D8 /* UnityAds.bundle in Resources */,::end::
                 ::if ENV_STARTAPP_ENABLED::419361371CA57F6200649587 /* StartApp.bundle in Resources */,::end::
                 ::if ENV_VUNGLE_ENABLED::
                 41730DC31BFF5B1000A82A87 /* __vungle.db in Resources */,

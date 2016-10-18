@@ -112,9 +112,6 @@
 				1EEEBAB3121AF2880048A9D0 /* CoreMotion.framework in Frameworks */,
 				1EEEBAB3121AF2880048A9D1 /* MediaPlayer.framework in Frameworks */,
                 ::if ENV_VUNGLE_ENABLED::41730DC91BFF5B1000A82A87 /* VungleSDK.framework in Frameworks */,::end::
-                ::if ENV_VUNGLE_ENABLED::415EE1A41D9713F700651591 /* FYBHZMediationTestSuiteEF.framework in Frameworks */,
-                415EE1A31D9713F700651591 /* Fyber_HyprMX_4.1.0.68-r1.framework in Frameworks */,
-                ::end::
 				::ADDL_PBX_FRAMEWORKS_BUILD_PHASE::
 			);
 			runOnlyForDeploymentPostprocessing = 0;

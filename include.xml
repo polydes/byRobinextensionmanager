@@ -16,6 +16,7 @@
         <dependency name="CoreFoundation.framework" />
         <dependency name="CoreMedia.framework" />
         <dependency name="CoreTelephony.framework" />
+        <dependency name="CoreVideo.framework" />
         <dependency name="EventKit.framework" />
         <dependency name="EventKitUI.framework" />
         <dependency name="iAd.framework" />

@@ -1,6 +1,6 @@
 ## Stencyl byRobin Extension Manager (Openfl)
 
-For Stencyl 3.3 and above
+For Stencyl 3.4 and above
 
 Stencyl extension for “Extension Support”  for iOS and Android. This extension allows you to easily integrate enable features for different extensions on your Stencyl game / application. (http://www.stencyl.com)
 

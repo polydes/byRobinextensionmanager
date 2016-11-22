@@ -24,6 +24,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>::APP_BUILD_NUMBER::</string>
+	::if ENV_HEYZAP_ENABLED::<key>NSCalendarsUsageDescription</key>
+	<string>Advertisement would like to create a calendar event.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Advertisement would like to use bluetooth.</string>::end::
 	::if ENV_SIMPLESHARE_ENABLED::<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app needs access to photos.</string>::end::
 	<key>LSRequiresIPhoneOS</key>

@@ -48,13 +48,27 @@
 	::if (IOS_APP_ORIENTATION != null)::
 	<key>UISupportedInterfaceOrientations</key>
 	::IOS_APP_ORIENTATION::::end::
+	::if ENV_TAPDAQ_ENABLED::
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+    	  <string>fb</string>
+    	  <string>instagram</string>
+    	  <string>tumblr</string>
+    	  <string>twitter</string>
+	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to photos.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Advertisement would like to create a calendar event.</string>
+	::end::
 	<key>NSAppTransportSecurity</key>
     <dict>
 		<key>NSAllowsArbitraryLoads</key>
     	<true/>
     <key>NSExceptionDomains</key>
     <dict>
-     	::if ENV_TAPDAQ_ENABLED::<key>tapdaq.com</key>
+     	::if ENV_TAPDAQ_ENABLED::
+	<key>tapdaq.com</key>
         <dict>
         	<!--Include to allow subdomains-->
             <key>NSIncludesSubdomains</key>
@@ -62,8 +76,9 @@
             <!--Include to allow HTTP requests-->
             <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
             <true/>
-        </dict>::end::
-		::if ENV_FACEBOOKADS_ENABLED::<key>facebook.com</key>
+        </dict>
+	::end::
+	::if ENV_FACEBOOKADS_ENABLED::<key>facebook.com</key>
     	<dict>
         	<key>NSIncludesSubdomains</key>
         	<true/>                

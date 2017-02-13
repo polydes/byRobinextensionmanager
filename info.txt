@@ -2,5 +2,5 @@ name=byRobin Extension Manager v0.0.8
 description=iOS use for:Tapdaq, Vungle, UnityAds, AppLovin, StartApp, FacebookAds, WebView2.0, Leadbolt, Heyzap, Simple Share
 author=Robin Schaafsma
 website=http://www.byrobingames.com
-version=0.0.8
+version=0.0.9
 compatibility=ios

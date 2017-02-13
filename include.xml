@@ -9,8 +9,10 @@
         <echo value='| Vungle, Webview2.0                                                         |' />
         <echo value='|----------------------------------------------------------------------------|' />
         
+        <setenv name="BYROBIN_ENABLED" value="true" />
+        
         <dependency name="Accelerate.framework" />
-        <dependency name="AdSupport.framework" />
+        <!-- <dependency name="AdSupport.framework" />-->
         <dependency name="CFNetwork.framework" />
         <dependency name="CoreLocation.framework" />
         <dependency name="CoreFoundation.framework" />
@@ -18,10 +20,10 @@
         <dependency name="CoreTelephony.framework" />
         <dependency name="CoreVideo.framework" />
         <dependency name="EventKit.framework" />
-        <dependency name="EventKitUI.framework" />
+        <!-- <dependency name="EventKitUI.framework" />
         <dependency name="iAd.framework" />
         <dependency name="MessageUI.framework" />
-        <dependency name="MobileCoreServices.framework" />
+        <dependency name="MobileCoreServices.framework" />-->
         <dependency name="Security.framework" />
         <dependency name="Social.framework" />
         <dependency name="StoreKit.framework" />
@@ -31,6 +33,7 @@
         <dependency name="xml2" />
         <dependency name="sqlite3" />
         <dependency name="z" />
+        <dependency name="z.1.2.5" />
         <dependency name="c++" />
         
         <ios linker-flags="-ObjC" />

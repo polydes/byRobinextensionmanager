@@ -22,38 +22,39 @@
 		F2336A411D94687900C9E785 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2336A401D94687900C9E785 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F2336A431D946A5F00C9E785 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2336A421D946A5F00C9E785 /* GLKit.framework */; };
 		1EEEBB00121BE2B30048A9DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEEBAFF121BE2B30048A9DF /* Foundation.framework */; };
+
+        ::if ENV_BYROBIN_ENABLED::
+        41E314561E50A20E007F907E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E314551E50A20E007F907E /* EventKitUI.framework */; };
+        41E314581E50A2B4007F907E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E314571E50A2B4007F907E /* AdSupport.framework */; };
+        41E3145A1E50A4AB007F907E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E314591E50A4AB007F907E /* iAd.framework */; };
+        41E3145C1E50A4B9007F907E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E3145B1E50A4B9007F907E /* MessageUI.framework */; };
+        41E3145E1E50A4CC007F907E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E3145D1E50A4CC007F907E /* MobileCoreServices.framework */; };
+        ::end::
+
 		1EF0A83A121ADB8E003F2F59 /* Main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EF0A839121ADB8E003F2F59 /* Main.mm */; };
 		4257533F1A5EFD8C004AA45B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4257533E1A5EFD8C004AA45B /* Images.xcassets */; };
 
         ::if ENV_STARTAPP_ENABLED::419361371CA57F6200649587 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 419361361CA57F6200649587 /* StartApp.bundle */; };
         ::end::
 
+        ::if ENV_FACEBOOKADS_ENABLED::
         ::if ENV_HEYZAP_ENABLED::
-
-        ::if ENV_FACEBOOKADS_ENABLED::
         41FEB8E91DBCA86B006B6A68 /* Fyber_FacebookAudienceNetwork_4.10.1-r4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FEB8E81DBCA86B006B6A68 /* Fyber_FacebookAudienceNetwork_4.10.1-r4.framework */; };
-        ::end::
-        ::if ENV_VUNGLE_ENABLED::
-        41FEB94B1DBCD6DD006B6A68 /* Fyber_Vungle_4.0.6-r2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FEB9431DBCD6DD006B6A68 /* Fyber_Vungle_4.0.6-r2.framework */; };
-        41FEB94C1DBCD6DD006B6A68 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 41FEB9451DBCD6DD006B6A68 /* __vungle.db */; };
-        41FEB94D1DBCD6DD006B6A68 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FEB9461DBCD6DD006B6A68 /* vg_close.png */; };
-        41FEB94E1DBCD6DD006B6A68 /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FEB9471DBCD6DD006B6A68 /* vg_cta.png */; };
-        41FEB94F1DBCD6DD006B6A68 /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FEB9481DBCD6DD006B6A68 /* vg_mute_off.png */; };
-        41FEB9501DBCD6DD006B6A68 /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FEB9491DBCD6DD006B6A68 /* vg_mute_on.png */; };
-        41FEB9511DBCD6DD006B6A68 /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FEB94A1DBCD6DD006B6A68 /* vg_privacy.png */; };
-        ::end::
-        ::if ENV_APPLOVIN_ENABLED::
-        41FEB95F1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FEB95E1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework */; };
-        ::end::
-        ::if ENV_UNITYADS_ENABLED::
-        4166C5D01DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4166C5CD1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework */; };
-        4166C5D11DDCF0E100980F9F /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4166C5CF1DDCF0E100980F9F /* UnityAds.framework */; };
-        ::end::
         ::else::
-        ::if ENV_FACEBOOKADS_ENABLED::
         41FEB8E71DBCA854006B6A68 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FEB8E61DBCA854006B6A68 /* FBAudienceNetwork.framework */; };
         ::end::
+        ::end::
+
         ::if ENV_VUNGLE_ENABLED::
+        ::if ENV_HEYZAP_ENABLED::
+        41E3144C1E505C63007F907E /* Fyber_Vungle_4.0.6-r2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E314441E505C63007F907E /* Fyber_Vungle_4.0.6-r2.framework */; };
+        41E3144D1E505C63007F907E /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 41E314461E505C63007F907E /* __vungle.db */; };
+        41E3144E1E505C63007F907E /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E314471E505C63007F907E /* vg_close.png */; };
+        41E3144F1E505C63007F907E /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E314481E505C63007F907E /* vg_cta.png */; };
+        41E314501E505C63007F907E /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E314491E505C63007F907E /* vg_mute_off.png */; };
+        41E314511E505C63007F907E /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E3144A1E505C63007F907E /* vg_mute_on.png */; };
+        41E314521E505C63007F907E /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E3144B1E505C63007F907E /* vg_privacy.png */; };
+        ::else::
         41730DC31BFF5B1000A82A87 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 41730DBC1BFF5B1000A82A87 /* __vungle.db */; };
         41730DC41BFF5B1000A82A87 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DBD1BFF5B1000A82A87 /* vg_close.png */; };
         41730DC51BFF5B1000A82A87 /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DBE1BFF5B1000A82A87 /* vg_cta.png */; };
@@ -62,19 +63,66 @@
         41730DC81BFF5B1000A82A87 /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DC11BFF5B1000A82A87 /* vg_privacy.png */; };
         41730DC91BFF5B1000A82A87 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41730DC21BFF5B1000A82A87 /* VungleSDK.framework */; };
         ::end::
+        ::end::
+
         ::if ENV_APPLOVIN_ENABLED::
+        ::if ENV_HEYZAP_ENABLED::
+        41FEB95F1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FEB95E1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework */; };
+        ::else::
         41FEB9611DBE937A006B6A68 /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FEB9601DBE937A006B6A68 /* libAppLovinSdk.a */; };
         ::end::
+        ::end::
+
         ::if ENV_UNITYADS_ENABLED::
+        ::if ENV_HEYZAP_ENABLED::
+        4166C5D01DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4166C5CD1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework */; };
+        4166C5D11DDCF0E100980F9F /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4166C5CF1DDCF0E100980F9F /* UnityAds.framework */; };
+        ::else::
         4166C5CB1DDCE55400980F9F /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4166C5C91DDCE55400980F9F /* UnityAds.framework */; };
         ::end::
         ::end::
 
+        ::if ENV_TAPDAQ_ENABLED::
+        419DDE301E4E33C100E7244B /* AdMobAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */; };
+        419DDE311E4E33C100E7244B /* AdMobAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        419DDE3A1E4E514700E7244B /* AdColonyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE391E4E514700E7244B /* AdColonyAdapter.framework */; };
+        419DDE3B1E4E514700E7244B /* AdColonyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE391E4E514700E7244B /* AdColonyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        419DDE371E4E34A500E7244B /* ChartboostAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */; };
+        419DDE381E4E34A500E7244B /* ChartboostAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        419DDE611E4FAF5A00E7244B /* FANAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE601E4FAF5A00E7244B /* FANAdapter.framework */; };
+        419DDE621E4FAF5B00E7244B /* FANAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE601E4FAF5A00E7244B /* FANAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        419DDE5E1E4FAF3E00E7244B /* VungleAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */; };
+        419DDE5F1E4FAF3E00E7244B /* VungleAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        19DDE641E4FAF6E00E7244B /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */; };
+        419DDE651E4FAF6E00E7244B /* AppLovinAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        419DDE5B1E4FAF2100E7244B /* UnityAdsAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */; };
+        419DDE5C1E4FAF2100E7244B /* UnityAdsAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
 
         ::ADDL_PBX_BUILD_FILE::
 
 /* End PBXBuildFile section */
-
+::if ENV_TAPDAQ_ENABLED::
+/* Begin PBXCopyFilesBuildPhase section */
+        419DDE321E4E33C100E7244B /* Embed Frameworks */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 10;
+            files = (
+                419DDE311E4E33C100E7244B /* AdMobAdapter.framework in Embed Frameworks */,
+                419DDE3B1E4E514700E7244B /* AdColonyAdapter.framework in Embed Frameworks */,
+                419DDE381E4E34A500E7244B /* ChartboostAdapter.framework in Embed Frameworks */,
+                419DDE621E4FAF5B00E7244B /* FANAdapter.framework in Embed Frameworks */,
+                419DDE5F1E4FAF3E00E7244B /* VungleAdapter.framework in Embed Frameworks */,
+                419DDE5C1E4FAF2100E7244B /* UnityAdsAdapter.framework in Embed Frameworks */,
+                419DDE651E4FAF6E00E7244B /* AppLovinAdapter.framework in Embed Frameworks */,
+                );
+            name = "Embed Frameworks";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXCopyFilesBuildPhase section */
+::end::
 /* Begin PBXContainerItemProxy section */
 		1EF0A882121AE1D2003F2F59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -105,35 +153,35 @@
 		F2336A401D94687900C9E785 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		F2336A421D946A5F00C9E785 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 
+        ::if ENV_BYROBIN_ENABLED::
+        41E314551E50A20E007F907E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+        41E314571E50A2B4007F907E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+        41E314591E50A4AB007F907E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+        41E3145B1E50A4B9007F907E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+        41E3145D1E50A4CC007F907E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+        ::end::
+
         ::if ENV_STARTAPP_ENABLED::419361361CA57F6200649587 /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = StartApp.bundle ; path = "::APP_FILE::/Classes/StartApp.bundle"; sourceTree = "<group>"; };
         ::end::
 
+        ::if ENV_FACEBOOKADS_ENABLED::
         ::if ENV_HEYZAP_ENABLED::
-
-        ::if ENV_FACEBOOKADS_ENABLED::
         41FEB8E81DBCA86B006B6A68 /* Fyber_FacebookAudienceNetwork_4.10.1-r4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Fyber_FacebookAudienceNetwork_4.10.1-r4.framework"; path = "::APP_FILE::/Classes/Fyber_FacebookAudienceNetwork_4.10.1-r4.framework"; sourceTree = "<group>"; };
-        ::end::
-        ::if ENV_VUNGLE_ENABLED::
-        41FEB9431DBCD6DD006B6A68 /* Fyber_Vungle_4.0.6-r2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_Vungle_4.0.6-r2.framework"; sourceTree = "<group>"; };
-        41FEB9451DBCD6DD006B6A68 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
-        41FEB9461DBCD6DD006B6A68 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
-        41FEB9471DBCD6DD006B6A68 /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
-        41FEB9481DBCD6DD006B6A68 /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
-        41FEB9491DBCD6DD006B6A68 /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
-        41FEB94A1DBCD6DD006B6A68 /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
-        ::end::
-        ::if ENV_APPLOVIN_ENABLED::
-        41FEB95E1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Fyber_AppLovin_3.4.3-r1.framework"; path = "::APP_FILE::/Classes/Fyber_AppLovin_3.4.3-r1.framework"; sourceTree = "<group>"; };
-        ::end::
-        ::if ENV_UNITYADS_ENABLED::
-        4166C5CD1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_UnityAds_2.0.2-r1.framework"; sourceTree = "<group>"; };
-        4166C5CF1DDCF0E100980F9F /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
-        ::end::
         ::else::
-        ::if ENV_FACEBOOKADS_ENABLED::
         41FEB8E61DBCA854006B6A68 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = "::APP_FILE::/Classes/FBAudienceNetwork.framework"; sourceTree = "<group>"; };
         ::end::
+        ::end::
+
         ::if ENV_VUNGLE_ENABLED::
+        ::if ENV_HEYZAP_ENABLED::
+        41E314441E505C63007F907E /* Fyber_Vungle_4.0.6-r2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_Vungle_4.0.6-r2.framework"; sourceTree = "<group>"; };
+        41E314461E505C63007F907E /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
+        41E314471E505C63007F907E /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
+        41E314481E505C63007F907E /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
+        41E314491E505C63007F907E /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
+        41E3144A1E505C63007F907E /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
+        41E3144B1E505C63007F907E /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
+        ::else::
         41730DBC1BFF5B1000A82A87 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
         41730DBD1BFF5B1000A82A87 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
         41730DBE1BFF5B1000A82A87 /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
@@ -142,12 +190,33 @@
         41730DC11BFF5B1000A82A87 /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
         41730DC21BFF5B1000A82A87 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
         ::end::
+        ::end::
+
         ::if ENV_APPLOVIN_ENABLED::
+        ::if ENV_HEYZAP_ENABLED::
+        41FEB95E1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Fyber_AppLovin_3.4.3-r1.framework"; path = "::APP_FILE::/Classes/Fyber_AppLovin_3.4.3-r1.framework"; sourceTree = "<group>"; };
+        ::else::
         41FEB9601DBE937A006B6A68 /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppLovinSdk.a; path = "::APP_FILE::/Classes/libAppLovinSdk.a"; sourceTree = "<group>"; };
         ::end::
+        ::end::
+
         ::if ENV_UNITYADS_ENABLED::
+        ::if ENV_HEYZAP_ENABLED::
+        4166C5CD1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Fyber_UnityAds_2.0.2-r1.framework"; sourceTree = "<group>"; };
+        4166C5CF1DDCF0E100980F9F /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
+        ::else::
         4166C5C91DDCE55400980F9F /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = "::APP_FILE::/Classes/UnityAds.framework"; sourceTree = "<group>"; };
         ::end::
+        ::end::
+
+        ::if ENV_TAPDAQ_ENABLED::
+        419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdMobAdapter.framework; path = "::APP_FILE::/Classes/AdMobAdapter.framework"; sourceTree = "<group>"; };
+        419DDE391E4E514700E7244B /* AdColonyAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColonyAdapter.framework; path = "::APP_FILE::/Classes/AdColonyAdapter.framework"; sourceTree = "<group>"; };
+        419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartboostAdapter.framework; path = "::APP_FILE::/Classes/ChartboostAdapter.framework"; sourceTree = "<group>"; };
+        419DDE601E4FAF5A00E7244B /* FANAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FANAdapter.framework; path = "::APP_FILE::/Classes/FANAdapter.framework"; sourceTree = "<group>"; };
+        419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VungleAdapter.framework; path = "::APP_FILE::/Classes/VungleAdapter.framework"; sourceTree = "<group>"; };
+        419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinAdapter.framework; path = "::APP_FILE::/Classes/AppLovinAdapter.framework"; sourceTree = "<group>"; };
+        419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAdsAdapter.framework; path = "::APP_FILE::/Classes/UnityAdsAdapter.framework"; sourceTree = "<group>"; };
         ::end::
 
 		::ADDL_PBX_FILE_REFERENCE::
@@ -163,6 +232,13 @@
 			files = (
 				::if ARMV6::1EF0A888121AE2F0003F2F59 /* lib/ApplicationMain.a in lib */,::end::
 				::if ARMV7::1EF0A888121AE2F0003F2F5A /* lib/ApplicationMain-v7.a in lib */,::end::
+                ::if ENV_BYROBIN_ENABLED::
+                41E314581E50A2B4007F907E /* AdSupport.framework in Frameworks */,
+                41E314561E50A20E007F907E /* EventKitUI.framework in Frameworks */,
+                41E3145E1E50A4CC007F907E /* MobileCoreServices.framework in Frameworks */,
+                41E3145C1E50A4B9007F907E /* MessageUI.framework in Frameworks */,
+                41E3145A1E50A4AB007F907E /* iAd.framework in Frameworks */,
+                ::end::
 				F2336A411D94687900C9E785 /* SafariServices.framework in Frameworks */,
 				F2336A431D946A5F00C9E785 /* GLKit.framework in Frameworks */,
 				1EEEBA9B121AF1C60048A9DF /* UIKit.framework in Frameworks */,
@@ -176,34 +252,48 @@
 				1EEEBB00121BE2B30048A9DF /* Foundation.framework in Frameworks */,
 				1EEEBAB3121AF2880048A9D0 /* CoreMotion.framework in Frameworks */,
 				1EEEBAB3121AF2880048A9D1 /* MediaPlayer.framework in Frameworks */,
-                ::if ENV_HEYZAP_ENABLED::
 
                 ::if ENV_FACEBOOKADS_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
                 41FEB8E91DBCA86B006B6A68 /* Fyber_FacebookAudienceNetwork_4.10.1-r4.framework in Frameworks */,
-                ::end::
-                ::if ENV_VUNGLE_ENABLED::
-                41FEB94B1DBCD6DD006B6A68 /* Fyber_Vungle_4.0.6-r2.framework in Frameworks */,
-                ::end::
-                ::if ENV_APPLOVIN_ENABLED::
-                41FEB95F1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework in Frameworks */,
-                ::end::
-                ::if ENV_UNITYADS_ENABLED::
-                4166C5D01DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework in Frameworks */,
-                4166C5D11DDCF0E100980F9F /* UnityAds.framework in Frameworks */,
-                ::end::
                 ::else::
-                ::if ENV_FACEBOOKADS_ENABLED::
                 41FEB8E71DBCA854006B6A68 /* FBAudienceNetwork.framework in Frameworks */,
                 ::end::
+                ::end::
+
                 ::if ENV_VUNGLE_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
+                41E314391E4FD81E007F907E /* Fyber_Vungle_4.0.6-r2.framework in Frameworks */,
+                ::else::
                 41730DC91BFF5B1000A82A87 /* VungleSDK.framework in Frameworks */,
                 ::end::
+                ::end::
+
                 ::if ENV_APPLOVIN_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
+                41FEB95F1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework in Frameworks */,
+                ::else::
                 41FEB9611DBE937A006B6A68 /* libAppLovinSdk.a in Frameworks */,
                 ::end::
+                ::end::
+
                 ::if ENV_UNITYADS_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
+                4166C5D01DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework in Frameworks */,
+                4166C5D11DDCF0E100980F9F /* UnityAds.framework in Frameworks */,
+                ::else::
                 4166C5CB1DDCE55400980F9F /* UnityAds.framework in Frameworks */,
                 ::end::
+                ::end::
+
+                ::if ENV_TAPDAQ_ENABLED::
+                419DDE301E4E33C100E7244B /* AdMobAdapter.framework in Frameworks */,
+                419DDE3A1E4E514700E7244B /* AdColonyAdapter.framework in Frameworks */,
+                419DDE371E4E34A500E7244B /* ChartboostAdapter.framework in Frameworks */,
+                419DDE611E4FAF5A00E7244B /* FANAdapter.framework in Frameworks */,
+                419DDE5E1E4FAF3E00E7244B /* VungleAdapter.framework in Frameworks */,
+                419DDE641E4FAF6E00E7244B /* AppLovinAdapter.framework in Frameworks */,
+                419DDE5B1E4FAF2100E7244B /* UnityAdsAdapter.framework in Frameworks */,
                 ::end::
 
 				::ADDL_PBX_FRAMEWORKS_BUILD_PHASE::
@@ -245,32 +335,42 @@
 				1EEEBAFD121BE2980048A9DF /* AVFoundation.framework */,
 				1EEEBAB2121AF2880048A9D0 /* CoreMotion.framework */,
 				1EEEBAB2121AF2880048A9D1 /* MediaPlayer.framework */,
+                ::if ENV_BYROBIN_ENABLED::
+                41E314571E50A2B4007F907E /* AdSupport.framework */,
+                41E314551E50A20E007F907E /* EventKitUI.framework */,
+                41E3145D1E50A4CC007F907E /* MobileCoreServices.framework */,
+                41E3145B1E50A4B9007F907E /* MessageUI.framework */,
+                41E314591E50A4AB007F907E /* iAd.framework */,
+                ::end::
 
+                ::if ENV_FACEBOOKADS_ENABLED::
                 ::if ENV_HEYZAP_ENABLED::
-
-                ::if ENV_FACEBOOKADS_ENABLED::
                 41FEB8E81DBCA86B006B6A68 /* Fyber_FacebookAudienceNetwork_4.10.1-r4.framework */,
-                ::end::
-                ::if ENV_VUNGLE_ENABLED::
-                41FEB9421DBCD6DD006B6A68 /* Fyber_Vungle_4.0.6-r2.embeddedframework */,
-                ::end::
-                ::if ENV_APPLOVIN_ENABLED::
-                41FEB95E1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework */,
-                ::end::
-                ::if ENV_UNITYADS_ENABLED::
-                4166C5CC1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.embeddedframework */,
-                ::end::
                 ::else::
-                ::if ENV_FACEBOOKADS_ENABLED::
                 41FEB8E61DBCA854006B6A68 /* FBAudienceNetwork.framework */,
                 ::end::
+                ::end::
+
                 ::if ENV_VUNGLE_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
+                41E314431E505C63007F907E /* Fyber_Vungle_4.0.6-r2.embeddedframework */,
+                ::else::
                 41730DBA1BFF5B1000A82A87 /* VungleSDK.embeddedframework */,
                 ::end::
+                ::end::
+
                 ::if ENV_APPLOVIN_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
+                41FEB95E1DBE8444006B6A68 /* Fyber_AppLovin_3.4.3-r1.framework */,
+                ::else::
                 41FEB9601DBE937A006B6A68 /* libAppLovinSdk.a */,
                 ::end::
+                ::end::
+
                 ::if ENV_UNITYADS_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
+                4166C5CC1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.embeddedframework */,
+                ::else::
                 4166C5C91DDCE55400980F9F /* UnityAds.framework */,
                 ::end::
                 ::end::
@@ -283,6 +383,15 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+                ::if ENV_TAPDAQ_ENABLED::
+                419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */,
+                419DDE391E4E514700E7244B /* AdColonyAdapter.framework */,
+                419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */,
+                419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */,
+                419DDE601E4FAF5A00E7244B /* FANAdapter.framework */,
+                419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */,
+                419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */,
+                ::end::
 				1EEEBA99121AF18B0048A9DF /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -311,55 +420,33 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-        ::if ENV_HEYZAP_ENABLED::
 
         ::if ENV_VUNGLE_ENABLED::
-        41FEB9421DBCD6DD006B6A68 /* Fyber_Vungle_4.0.6-r2.embeddedframework */ = {
+        ::if ENV_HEYZAP_ENABLED::
+        41E314431E505C63007F907E /* Fyber_Vungle_4.0.6-r2.embeddedframework */ = {
             isa = PBXGroup;
             children = (
-                41FEB9431DBCD6DD006B6A68 /* Fyber_Vungle_4.0.6-r2.framework */,
-                41FEB9441DBCD6DD006B6A68 /* Resources */,
+                41E314441E505C63007F907E /* Fyber_Vungle_4.0.6-r2.framework */,
+                41E314451E505C63007F907E /* Resources */,
             );
             name = "Fyber_Vungle_4.0.6-r2.embeddedframework";
             path = "::APP_FILE::/Classes/Fyber_Vungle_4.0.6-r2.embeddedframework";
             sourceTree = "<group>";
         };
-        41FEB9441DBCD6DD006B6A68 /* Resources */ = {
+        41E314451E505C63007F907E /* Resources */ = {
             isa = PBXGroup;
             children = (
-                41FEB9451DBCD6DD006B6A68 /* __vungle.db */,
-                41FEB9461DBCD6DD006B6A68 /* vg_close.png */,
-                41FEB9471DBCD6DD006B6A68 /* vg_cta.png */,
-                41FEB9481DBCD6DD006B6A68 /* vg_mute_off.png */,
-                41FEB9491DBCD6DD006B6A68 /* vg_mute_on.png */,
-                41FEB94A1DBCD6DD006B6A68 /* vg_privacy.png */,
+                41E314461E505C63007F907E /* __vungle.db */,
+                41E314471E505C63007F907E /* vg_close.png */,
+                41E314481E505C63007F907E /* vg_cta.png */,
+                41E314491E505C63007F907E /* vg_mute_off.png */,
+                41E3144A1E505C63007F907E /* vg_mute_on.png */,
+                41E3144B1E505C63007F907E /* vg_privacy.png */,
             );
             path = Resources;
             sourceTree = "<group>";
         };
-        ::end::
-        ::if ENV_UNITYADS_ENABLED::
-        4166C5CC1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.embeddedframework */ = {
-            isa = PBXGroup;
-            children = (
-                4166C5CD1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework */,
-                4166C5CE1DDCF0E100980F9F /* Resources */,
-            );
-            name = "Fyber_UnityAds_2.0.2-r1.embeddedframework";
-            path = "::APP_FILE::/Classes/Fyber_UnityAds_2.0.2-r1.embeddedframework";
-            sourceTree = "<group>";
-        };
-        4166C5CE1DDCF0E100980F9F /* Resources */ = {
-            isa = PBXGroup;
-            children = (
-                4166C5CF1DDCF0E100980F9F /* UnityAds.framework */,
-            );
-            path = Resources;
-            sourceTree = "<group>";
-        };
-        ::end::
         ::else::
-        ::if ENV_VUNGLE_ENABLED::
         41730DBA1BFF5B1000A82A87 /* VungleSDK.embeddedframework */ = {
             isa = PBXGroup;
             children = (
@@ -386,6 +473,29 @@
         ::end::
         ::end::
 
+        ::if ENV_UNITYADS_ENABLED::
+        ::if ENV_HEYZAP_ENABLED::
+        4166C5CC1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.embeddedframework */ = {
+            isa = PBXGroup;
+            children = (
+                4166C5CD1DDCF0E100980F9F /* Fyber_UnityAds_2.0.2-r1.framework */,
+                4166C5CE1DDCF0E100980F9F /* Resources */,
+            );
+            name = "Fyber_UnityAds_2.0.2-r1.embeddedframework";
+            path = "::APP_FILE::/Classes/Fyber_UnityAds_2.0.2-r1.embeddedframework";
+            sourceTree = "<group>";
+        };
+        4166C5CE1DDCF0E100980F9F /* Resources */ = {
+            isa = PBXGroup;
+            children = (
+                4166C5CF1DDCF0E100980F9F /* UnityAds.framework */,
+            );
+            path = Resources;
+            sourceTree = "<group>";
+        };
+        ::end::
+        ::end::
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +506,9 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+                ::if ENV_TAPDAQ_ENABLED::
+                419DDE321E4E33C100E7244B /* Embed Frameworks */,
+                ::end::
 			);
 			buildRules = (
 			);
@@ -460,12 +573,21 @@
                 419361371CA57F6200649587 /* StartApp.bundle in Resources */,
                 ::end::
                 ::if ENV_VUNGLE_ENABLED::
+                ::if ENV_HEYZAP_ENABLED::
+                41E314501E505C63007F907E /* vg_mute_off.png in Resources */,
+                41E3144D1E505C63007F907E /* __vungle.db in Resources */,
+                41E314511E505C63007F907E /* vg_mute_on.png in Resources */,
+                41E314521E505C63007F907E /* vg_privacy.png in Resources */,
+                41E3144F1E505C63007F907E /* vg_cta.png in Resources */,
+                41E3144E1E505C63007F907E /* vg_close.png in Resources */,
+                ::else::
                 41730DC31BFF5B1000A82A87 /* __vungle.db in Resources */,
                 41730DC71BFF5B1000A82A87 /* vg_mute_on.png in Resources */,
                 41730DC81BFF5B1000A82A87 /* vg_privacy.png in Resources */,
                 41730DC51BFF5B1000A82A87 /* vg_cta.png in Resources */,
                 41730DC41BFF5B1000A82A87 /* vg_close.png in Resources */,
                 41730DC61BFF5B1000A82A87 /* vg_mute_off.png in Resources */,
+                ::end::
                 ::end::
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,10 +685,16 @@
 					"$(inherited)",
 					::foreach frameworkSearchPaths:: "\"::__current__::\"",
 					::end::
+                    ::if ENV_TAPDAQ_ENABLED::
+                    "\"$(PROJECT_DIR)/::APP_FILE::/Classes\"",
+                    ::end::
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "::APP_FILE::/::APP_FILE::-Prefix.pch";
 				INFOPLIST_FILE = "::APP_FILE::/::APP_FILE::-Info.plist";
+                ::if ENV_TAPDAQ_ENABLED::
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                ::end::
 				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
 					"$(inherited)",
 					"\"$(SRCROOT)/::APP_FILE::/lib/arm64-debug\"",
@@ -617,10 +745,16 @@
 					"$(inherited)",
 					::foreach frameworkSearchPaths:: "\"::__current__::\"",
 					::end::
+                    ::if ENV_TAPDAQ_ENABLED::
+                    "\"$(PROJECT_DIR)/::APP_FILE::/Classes\"",
+                    ::end::
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "::APP_FILE::/::APP_FILE::-Prefix.pch";
 				INFOPLIST_FILE = "::APP_FILE::/::APP_FILE::-Info.plist";
+                ::if ENV_TAPDAQ_ENABLED::
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                ::end::
 				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
 					"$(inherited)",
 					"\"$(SRCROOT)/::APP_FILE::/lib/arm64\"",

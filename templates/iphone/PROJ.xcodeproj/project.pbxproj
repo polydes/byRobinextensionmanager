@@ -93,7 +93,7 @@
         419DDE621E4FAF5B00E7244B /* FANAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE601E4FAF5A00E7244B /* FANAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
         419DDE5E1E4FAF3E00E7244B /* VungleAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */; };
         419DDE5F1E4FAF3E00E7244B /* VungleAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        19DDE641E4FAF6E00E7244B /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */; };
+        419DDE641E4FAF6E00E7244B /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */; };
         419DDE651E4FAF6E00E7244B /* AppLovinAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
         419DDE5B1E4FAF2100E7244B /* UnityAdsAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */; };
         419DDE5C1E4FAF2100E7244B /* UnityAdsAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };

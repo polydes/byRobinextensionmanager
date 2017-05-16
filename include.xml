@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-
+    
+    <!--<section if="android">
+        <classpath name="src" />
+        
+        <dependency name="byrobinmanager" path="dependencies/byrobinmanager" if="android" />
+        
+        <android extension="com.byrobin.manager.ByRobinManager" />
+    </section>-->
+    
 	<section if="ios">
         
         <echo value='|----------------------------------------------------------------------------|' />
@@ -52,5 +60,6 @@
         UIKit.framework in Frameworks -->
         
         <template path="templates" />
+        
 	</section>
 </project>

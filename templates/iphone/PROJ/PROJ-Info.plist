@@ -38,6 +38,8 @@
 			<key>::name::</key>
 			::if value::<true/>::else::<false/>::end::
 		::end::
+		<key>gamekit</key>
+		<true/>
 	</dict>
 	<key>UIRequiresFullScreen</key>
 	<true/>

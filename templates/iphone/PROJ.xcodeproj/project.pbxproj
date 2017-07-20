@@ -64,6 +64,8 @@
         419DDE5C1E4FAF2100E7244B /* UnityAdsAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
         000B69901EC38F86008D2AF3 /* TapjoyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */; };
         000B69911EC38F86008D2AF3 /* TapjoyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        00BF27E31F1E30B00039EADF /* IronSourceAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */; };
+        00BF27E41F1E30B00039EADF /* IronSourceAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
         ::end::
 
         ::ADDL_PBX_BUILD_FILE::
@@ -82,6 +84,7 @@
                 419DDE381E4E34A500E7244B /* ChartboostAdapter.framework in Embed Frameworks */,
                 419DDE621E4FAF5B00E7244B /* FANAdapter.framework in Embed Frameworks */,
                 419DDE5F1E4FAF3E00E7244B /* VungleAdapter.framework in Embed Frameworks */,
+                00BF27E41F1E30B00039EADF /* IronSourceAdapter.framework in Embed Frameworks */,
                 419DDE5C1E4FAF2100E7244B /* UnityAdsAdapter.framework in Embed Frameworks */,
                 419DDE651E4FAF6E00E7244B /* AppLovinAdapter.framework in Embed Frameworks */,
                 000B69911EC38F86008D2AF3 /* TapjoyAdapter.framework in Embed Frameworks */,
@@ -151,6 +154,7 @@
         419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinAdapter.framework; path = "::APP_FILE::/Classes/AppLovinAdapter.framework"; sourceTree = "<group>"; };
         419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAdsAdapter.framework; path = "::APP_FILE::/Classes/UnityAdsAdapter.framework"; sourceTree = "<group>"; };
         000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TapjoyAdapter.framework; path = "::APP_FILE::/Classes/TapjoyAdapter.framework"; sourceTree = "<group>"; };
+        00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IronSourceAdapter.framework; path = "::APP_FILE::/Classes/IronSourceAdapter.framework"; sourceTree = "<group>"; };
         ::end::
 
 		::ADDL_PBX_FILE_REFERENCE::
@@ -200,6 +204,7 @@
                 419DDE641E4FAF6E00E7244B /* AppLovinAdapter.framework in Frameworks */,
                 419DDE5B1E4FAF2100E7244B /* UnityAdsAdapter.framework in Frameworks */,
                 000B69901EC38F86008D2AF3 /* TapjoyAdapter.framework in Frameworks */,
+                00BF27E31F1E30B00039EADF /* IronSourceAdapter.framework in Frameworks */,
                 ::end::
 
 				::ADDL_PBX_FRAMEWORKS_BUILD_PHASE::
@@ -270,6 +275,7 @@
                 419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */,
                 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */,
                 000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */,
+                00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */,
                 ::end::
 				1EEEBA99121AF18B0048A9DF /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* Classes */,

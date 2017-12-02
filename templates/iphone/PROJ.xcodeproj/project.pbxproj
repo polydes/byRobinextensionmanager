@@ -48,24 +48,61 @@
         ::end::
 
         ::if ENV_TAPDAQ_ENABLED::
-        419DDE301E4E33C100E7244B /* AdMobAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */; };
-        419DDE311E4E33C100E7244B /* AdMobAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        419DDE3A1E4E514700E7244B /* AdColonyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE391E4E514700E7244B /* AdColonyAdapter.framework */; };
-        419DDE3B1E4E514700E7244B /* AdColonyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE391E4E514700E7244B /* AdColonyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        419DDE371E4E34A500E7244B /* ChartboostAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */; };
-        419DDE381E4E34A500E7244B /* ChartboostAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        419DDE611E4FAF5A00E7244B /* FANAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE601E4FAF5A00E7244B /* FANAdapter.framework */; };
-        419DDE621E4FAF5B00E7244B /* FANAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE601E4FAF5A00E7244B /* FANAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        419DDE5E1E4FAF3E00E7244B /* VungleAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */; };
-        419DDE5F1E4FAF3E00E7244B /* VungleAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        419DDE641E4FAF6E00E7244B /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */; };
-        419DDE651E4FAF6E00E7244B /* AppLovinAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        419DDE5B1E4FAF2100E7244B /* UnityAdsAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */; };
-        419DDE5C1E4FAF2100E7244B /* UnityAdsAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        000B69901EC38F86008D2AF3 /* TapjoyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */; };
-        000B69911EC38F86008D2AF3 /* TapjoyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-        00BF27E31F1E30B00039EADF /* IronSourceAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */; };
-        00BF27E41F1E30B00039EADF /* IronSourceAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        00B1030E1FD1F6FD00B716D1 /* Tapdaq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */; };
+        00B1030F1FD1F6FD00B716D1 /* Tapdaq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::if ENV_TPCHARTBOOST_ENABLED::
+        00B102ED1FD1B94600B716D1 /* ChartboostAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E01FD1B94100B716D1 /* ChartboostAdapter.framework */; };
+        00B102EE1FD1B94600B716D1 /* ChartboostAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E01FD1B94100B716D1 /* ChartboostAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPTAPJOY_ENABLED::
+        00B102EF1FD1B94600B716D1 /* TapjoyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E11FD1B94200B716D1 /* TapjoyAdapter.framework */; };
+        00B102F01FD1B94600B716D1 /* TapjoyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E11FD1B94200B716D1 /* TapjoyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        00B102F11FD1B94600B716D1 /* AdMobAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E21FD1B94200B716D1 /* AdMobAdapter.framework */; };
+        00B102F21FD1B94600B716D1 /* AdMobAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E21FD1B94200B716D1 /* AdMobAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::if ENV_TPIRONSOURCE_ENABLED::
+        00B102F31FD1B94600B716D1 /* IronSourceAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E31FD1B94300B716D1 /* IronSourceAdapter.framework */; };
+        00B102F41FD1B94600B716D1 /* IronSourceAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E31FD1B94300B716D1 /* IronSourceAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPUNITYADS_ENABLED::
+        00B102F51FD1B94600B716D1 /* UnityAdsAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E41FD1B94300B716D1 /* UnityAdsAdapter.framework */; };
+        00B102F61FD1B94600B716D1 /* UnityAdsAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E41FD1B94300B716D1 /* UnityAdsAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPMOPUB_ENABLED::
+        00B102F71FD1B94600B716D1 /* MoPubAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */; };
+        00B102F81FD1B94600B716D1 /* MoPubAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPAPPLOVIN_ENABLED::
+        00B102F91FD1B94600B716D1 /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E61FD1B94400B716D1 /* AppLovinAdapter.framework */; };
+        00B102FA1FD1B94600B716D1 /* AppLovinAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E61FD1B94400B716D1 /* AppLovinAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPINMOBI_ENABLED::
+        00B102FB1FD1B94600B716D1 /* InMobiAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E71FD1B94400B716D1 /* InMobiAdapter.framework */; };
+        00B102FC1FD1B94600B716D1 /* InMobiAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E71FD1B94400B716D1 /* InMobiAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPRECEPTIV_ENABLED::
+        00B102FD1FD1B94700B716D1 /* ReceptivAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E81FD1B94500B716D1 /* ReceptivAdapter.framework */; };
+        00B102FE1FD1B94700B716D1 /* ReceptivAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E81FD1B94500B716D1 /* ReceptivAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPHYPRMX_ENABLED::
+        00B102FF1FD1B94700B716D1 /* HyprMXAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E91FD1B94500B716D1 /* HyprMXAdapter.framework */; };
+        00B103001FD1B94700B716D1 /* HyprMXAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E91FD1B94500B716D1 /* HyprMXAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPFACEBOOK_ENABLED::
+        00B103011FD1B94700B716D1 /* FANAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102EA1FD1B94500B716D1 /* FANAdapter.framework */; };
+        00B103021FD1B94700B716D1 /* FANAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102EA1FD1B94500B716D1 /* FANAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPADCOLONY_ENABLED::
+        00B103031FD1B94700B716D1 /* AdColonyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102EB1FD1B94600B716D1 /* AdColonyAdapter.framework */; };
+        00B103041FD1B94700B716D1 /* AdColonyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102EB1FD1B94600B716D1 /* AdColonyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPVUNGLE_ENABLED::
+        00B103051FD1B94700B716D1 /* VungleAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102EC1FD1B94600B716D1 /* VungleAdapter.framework */; };
+        00B103061FD1B94700B716D1 /* VungleAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102EC1FD1B94600B716D1 /* VungleAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        ::end::
+        ::if ENV_TPTAPJOY_ENABLED::
+        00B103081FD1B98C00B716D1 /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00B103071FD1B98B00B716D1 /* TapjoyResources.bundle */; };
+        ::end::
         ::end::
 
         ::ADDL_PBX_BUILD_FILE::
@@ -73,22 +110,51 @@
 /* End PBXBuildFile section */
 ::if ENV_TAPDAQ_ENABLED::
 /* Begin PBXCopyFilesBuildPhase section */
-        419DDE321E4E33C100E7244B /* Embed Frameworks */ = {
+        00B102DF1FD1B90900B716D1 /* Embed Frameworks */ = {
             isa = PBXCopyFilesBuildPhase;
             buildActionMask = 2147483647;
             dstPath = "";
             dstSubfolderSpec = 10;
             files = (
-                419DDE311E4E33C100E7244B /* AdMobAdapter.framework in Embed Frameworks */,
-                419DDE3B1E4E514700E7244B /* AdColonyAdapter.framework in Embed Frameworks */,
-                419DDE381E4E34A500E7244B /* ChartboostAdapter.framework in Embed Frameworks */,
-                419DDE621E4FAF5B00E7244B /* FANAdapter.framework in Embed Frameworks */,
-                419DDE5F1E4FAF3E00E7244B /* VungleAdapter.framework in Embed Frameworks */,
-                00BF27E41F1E30B00039EADF /* IronSourceAdapter.framework in Embed Frameworks */,
-                419DDE5C1E4FAF2100E7244B /* UnityAdsAdapter.framework in Embed Frameworks */,
-                419DDE651E4FAF6E00E7244B /* AppLovinAdapter.framework in Embed Frameworks */,
-                000B69911EC38F86008D2AF3 /* TapjoyAdapter.framework in Embed Frameworks */,
-                );
+                00B1030F1FD1F6FD00B716D1 /* Tapdaq.framework in Embed Frameworks */,
+                ::if ENV_TPRECEPTIV_ENABLED::
+                00B102FE1FD1B94700B716D1 /* ReceptivAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPMOPUB_ENABLED::
+                00B102F81FD1B94600B716D1 /* MoPubAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPUNITYADS_ENABLED::
+                00B102F61FD1B94600B716D1 /* UnityAdsAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPINMOBI_ENABLED::
+                00B102FC1FD1B94600B716D1 /* InMobiAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPVUNGLE_ENABLED::
+                00B103061FD1B94700B716D1 /* VungleAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPCHARTBOOST_ENABLED::
+                00B102EE1FD1B94600B716D1 /* ChartboostAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPIRONSOURCE_ENABLED::
+                00B102F41FD1B94600B716D1 /* IronSourceAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPHYPRMX_ENABLED::
+                00B103001FD1B94700B716D1 /* HyprMXAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPADCOLONY_ENABLED::
+                00B103041FD1B94700B716D1 /* AdColonyAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPTAPJOY_ENABLED::
+                00B102F01FD1B94600B716D1 /* TapjoyAdapter.framework in Embed Frameworks */,
+                ::end::
+                00B102F21FD1B94600B716D1 /* AdMobAdapter.framework in Embed Frameworks */,
+                ::if ENV_TPAPPLOVIN_ENABLED::
+                00B102FA1FD1B94600B716D1 /* AppLovinAdapter.framework in Embed Frameworks */,
+                ::end::
+                ::if ENV_TPFACEBOOK_ENABLED::
+                00B103021FD1B94700B716D1 /* FANAdapter.framework in Embed Frameworks */,
+                ::end::
+            );
             name = "Embed Frameworks";
             runOnlyForDeploymentPostprocessing = 0;
         };
@@ -146,15 +212,47 @@
         ::end::
 
         ::if ENV_TAPDAQ_ENABLED::
-        419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdMobAdapter.framework; path = "::APP_FILE::/Classes/AdMobAdapter.framework"; sourceTree = "<group>"; };
-        419DDE391E4E514700E7244B /* AdColonyAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColonyAdapter.framework; path = "::APP_FILE::/Classes/AdColonyAdapter.framework"; sourceTree = "<group>"; };
-        419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartboostAdapter.framework; path = "::APP_FILE::/Classes/ChartboostAdapter.framework"; sourceTree = "<group>"; };
-        419DDE601E4FAF5A00E7244B /* FANAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FANAdapter.framework; path = "::APP_FILE::/Classes/FANAdapter.framework"; sourceTree = "<group>"; };
-        419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VungleAdapter.framework; path = "::APP_FILE::/Classes/VungleAdapter.framework"; sourceTree = "<group>"; };
-        419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinAdapter.framework; path = "::APP_FILE::/Classes/AppLovinAdapter.framework"; sourceTree = "<group>"; };
-        419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAdsAdapter.framework; path = "::APP_FILE::/Classes/UnityAdsAdapter.framework"; sourceTree = "<group>"; };
-        000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TapjoyAdapter.framework; path = "::APP_FILE::/Classes/TapjoyAdapter.framework"; sourceTree = "<group>"; };
-        00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IronSourceAdapter.framework; path = "::APP_FILE::/Classes/IronSourceAdapter.framework"; sourceTree = "<group>"; };
+        00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tapdaq.framework; path = "::APP_FILE::/Classes/Tapdaq.framework"; sourceTree = "<group>"; };
+        ::if ENV_TPCHARTBOOST_ENABLED::
+        00B102E01FD1B94100B716D1 /* ChartboostAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartboostAdapter.framework; path = "::APP_FILE::/Classes/ChartboostAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPTAPJOY_ENABLED::
+        00B102E11FD1B94200B716D1 /* TapjoyAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TapjoyAdapter.framework; path = "::APP_FILE::/Classes/TapjoyAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        00B102E21FD1B94200B716D1 /* AdMobAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdMobAdapter.framework; path = "::APP_FILE::/Classes/AdMobAdapter.framework"; sourceTree = "<group>"; };
+        ::if ENV_TPIRONSOURCE_ENABLED::
+        00B102E31FD1B94300B716D1 /* IronSourceAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IronSourceAdapter.framework; path = "::APP_FILE::/Classes/IronSourceAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPUNITYADS_ENABLED::
+        00B102E41FD1B94300B716D1 /* UnityAdsAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAdsAdapter.framework; path = "::APP_FILE::/Classes/UnityAdsAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPMOPUB_ENABLED::
+        00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubAdapter.framework; path = "::APP_FILE::/Classes/MoPubAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPAPPLOVIN_ENABLED::
+        00B102E61FD1B94400B716D1 /* AppLovinAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinAdapter.framework; path = "::APP_FILE::/Classes/AppLovinAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPINMOBI_ENABLED::
+        00B102E71FD1B94400B716D1 /* InMobiAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InMobiAdapter.framework; path = "::APP_FILE::/Classes/InMobiAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPRECEPTIV_ENABLED::
+        00B102E81FD1B94500B716D1 /* ReceptivAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReceptivAdapter.framework; path = "::APP_FILE::/Classes/ReceptivAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPHYPRMX_ENABLED::
+        00B102E91FD1B94500B716D1 /* HyprMXAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HyprMXAdapter.framework; path = "::APP_FILE::/Classes/HyprMXAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPFACEBOOK_ENABLED::
+        00B102EA1FD1B94500B716D1 /* FANAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FANAdapter.framework; path = "::APP_FILE::/Classes/FANAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPADCOLONY_ENABLED::
+        00B102EB1FD1B94600B716D1 /* AdColonyAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColonyAdapter.framework; path = "::APP_FILE::/Classes/AdColonyAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPVUNGLE_ENABLED::
+        00B102EC1FD1B94600B716D1 /* VungleAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VungleAdapter.framework; path = "::APP_FILE::/Classes/VungleAdapter.framework"; sourceTree = "<group>"; };
+        ::end::
+        ::if ENV_TPTAPJOY_ENABLED::
+        00B103071FD1B98B00B716D1 /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapjoyResources.bundle; path = "::APP_FILE::/Classes/TapjoyResources.bundle"; sourceTree = "<group>"; };
+        ::end::
         ::end::
 
 		::ADDL_PBX_FILE_REFERENCE::
@@ -196,15 +294,44 @@
                 ::end::
 
                 ::if ENV_TAPDAQ_ENABLED::
-                419DDE301E4E33C100E7244B /* AdMobAdapter.framework in Frameworks */,
-                419DDE3A1E4E514700E7244B /* AdColonyAdapter.framework in Frameworks */,
-                419DDE371E4E34A500E7244B /* ChartboostAdapter.framework in Frameworks */,
-                419DDE611E4FAF5A00E7244B /* FANAdapter.framework in Frameworks */,
-                419DDE5E1E4FAF3E00E7244B /* VungleAdapter.framework in Frameworks */,
-                419DDE641E4FAF6E00E7244B /* AppLovinAdapter.framework in Frameworks */,
-                419DDE5B1E4FAF2100E7244B /* UnityAdsAdapter.framework in Frameworks */,
-                000B69901EC38F86008D2AF3 /* TapjoyAdapter.framework in Frameworks */,
-                00BF27E31F1E30B00039EADF /* IronSourceAdapter.framework in Frameworks */,
+                00B1030E1FD1F6FD00B716D1 /* Tapdaq.framework in Frameworks */,
+                ::if ENV_TPRECEPTIV_ENABLED::
+                00B102FD1FD1B94700B716D1 /* ReceptivAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPINMOBI_ENABLED::
+                00B102FB1FD1B94600B716D1 /* InMobiAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPAPPLOVIN_ENABLED::
+                00B102F91FD1B94600B716D1 /* AppLovinAdapter.framework in Frameworks */
+                ::end::
+                ::if ENV_TPMOPUB_ENABLED::,
+                00B102F71FD1B94600B716D1 /* MoPubAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPADCOLONY_ENABLED::
+                00B103031FD1B94700B716D1 /* AdColonyAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPHYPRMX_ENABLED::
+                00B102FF1FD1B94700B716D1 /* HyprMXAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPUNITYADS_ENABLED::
+                00B102F51FD1B94600B716D1 /* UnityAdsAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPCHARTBOOST_ENABLED::
+                00B102ED1FD1B94600B716D1 /* ChartboostAdapter.framework in Frameworks */,
+                ::end::
+                00B102F11FD1B94600B716D1 /* AdMobAdapter.framework in Frameworks */,
+                ::if ENV_TPIRONSOURCE_ENABLED::
+                00B102F31FD1B94600B716D1 /* IronSourceAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPFACEBOOK_ENABLED::
+                00B103011FD1B94700B716D1 /* FANAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPVUNGLE_ENABLED::
+                00B103051FD1B94700B716D1 /* VungleAdapter.framework in Frameworks */,
+                ::end::
+                ::if ENV_TPTAPJOY_ENABLED::
+                00B102EF1FD1B94600B716D1 /* TapjoyAdapter.framework in Frameworks */,
+                ::end::
                 ::end::
 
 				::ADDL_PBX_FRAMEWORKS_BUILD_PHASE::
@@ -267,15 +394,47 @@
 			isa = PBXGroup;
 			children = (
                 ::if ENV_TAPDAQ_ENABLED::
-                419DDE361E4E34A500E7244B /* ChartboostAdapter.framework */,
-                419DDE391E4E514700E7244B /* AdColonyAdapter.framework */,
-                419DDE2F1E4E33C100E7244B /* AdMobAdapter.framework */,
-                419DDE631E4FAF6D00E7244B /* AppLovinAdapter.framework */,
-                419DDE601E4FAF5A00E7244B /* FANAdapter.framework */,
-                419DDE5D1E4FAF3E00E7244B /* VungleAdapter.framework */,
-                419DDE5A1E4FAF2100E7244B /* UnityAdsAdapter.framework */,
-                000B698F1EC38F85008D2AF3 /* TapjoyAdapter.framework */,
-                00BF27E21F1E30B00039EADF /* IronSourceAdapter.framework */,
+                00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */,
+                ::if ENV_TPTAPJOY_ENABLED::
+                00B103071FD1B98B00B716D1 /* TapjoyResources.bundle */,
+                ::end::
+                ::if ENV_TPADCOLONY_ENABLED::
+                00B102EB1FD1B94600B716D1 /* AdColonyAdapter.framework */,
+                ::end::
+                00B102E21FD1B94200B716D1 /* AdMobAdapter.framework */,
+                ::if ENV_TPAPPLOVIN_ENABLED::
+                00B102E61FD1B94400B716D1 /* AppLovinAdapter.framework */,
+                ::end::
+                ::if ENV_TPCHARTBOOST_ENABLED::
+                00B102E01FD1B94100B716D1 /* ChartboostAdapter.framework */,
+                ::end::
+                ::if ENV_TPFACEBOOK_ENABLED::
+                00B102EA1FD1B94500B716D1 /* FANAdapter.framework */,
+                ::end::
+                ::if ENV_TPHYPRMX_ENABLED::
+                00B102E91FD1B94500B716D1 /* HyprMXAdapter.framework */,
+                ::end::
+                ::if ENV_TPINMOBI_ENABLED::
+                00B102E71FD1B94400B716D1 /* InMobiAdapter.framework */,
+                ::end::
+                ::if ENV_TPIRONSOURCE_ENABLED::
+                00B102E31FD1B94300B716D1 /* IronSourceAdapter.framework */,
+                ::end::
+                ::if ENV_TPMOPUB_ENABLED::
+                00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */,
+                ::end::
+                ::if ENV_TPRECEPTIV_ENABLED::
+                00B102E81FD1B94500B716D1 /* ReceptivAdapter.framework */,
+                ::end::
+                ::if ENV_TPTAPJOY_ENABLED::
+                00B102E11FD1B94200B716D1 /* TapjoyAdapter.framework */,
+                ::end::
+                ::if ENV_TPUNITYADS_ENABLED::
+                00B102E41FD1B94300B716D1 /* UnityAdsAdapter.framework */,
+                ::end::
+                ::if ENV_TPVUNGLE_ENABLED::
+                00B102EC1FD1B94600B716D1 /* VungleAdapter.framework */,
+                ::end::
                 ::end::
 				1EEEBA99121AF18B0048A9DF /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -343,7 +502,7 @@
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
                 ::if ENV_TAPDAQ_ENABLED::
-                419DDE321E4E33C100E7244B /* Embed Frameworks */,
+                00B102DF1FD1B90900B716D1 /* Embed Frameworks */,
                 ::end::
 			);
 			buildRules = (
@@ -423,6 +582,9 @@
                 41730DC51BFF5B1000A82A87 /* vg_cta.png in Resources */,
                 41730DC41BFF5B1000A82A87 /* vg_close.png in Resources */,
                 41730DC61BFF5B1000A82A87 /* vg_mute_off.png in Resources */,
+                ::end::
+                ::if ENV_TPTAPJOY_ENABLED::
+                00B103081FD1B98C00B716D1 /* TapjoyResources.bundle in Resources */,
                 ::end::
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +676,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+                ::if ENV_TAPDAQ_ENABLED::
+                CLANG_ENABLE_MODULES = YES;
+                ::end::
                 ENABLE_BITCODE = NO;
                 ::if DEVELOPMENT_TEAM_ID::DEVELOPMENT_TEAM = ::DEVELOPMENT_TEAM_ID::;::end::
 				FRAMEWORK_SEARCH_PATHS = (
@@ -574,6 +739,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+                ::if ENV_TAPDAQ_ENABLED::
+                CLANG_ENABLE_MODULES = YES;
+                ::end::
                 ENABLE_BITCODE = NO;
                 ::if DEVELOPMENT_TEAM_ID::DEVELOPMENT_TEAM = ::DEVELOPMENT_TEAM_ID::;::end::
 				FRAMEWORK_SEARCH_PATHS = (

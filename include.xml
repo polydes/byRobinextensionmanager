@@ -20,7 +20,7 @@
         <setenv name="BYROBIN_ENABLED" value="true" />
         
         <dependency name="Accelerate.framework" />
-        <!-- <dependency name="AdSupport.framework" />-->
+        <dependency name="CoreText.framework" />
         <dependency name="CFNetwork.framework" />
         <dependency name="CoreLocation.framework" />
         <dependency name="CoreFoundation.framework" />
@@ -39,7 +39,7 @@
         <dependency name="Webkit.framework" />
         
         <dependency name="xml2" />
-        <dependency name="sqlite3" />
+        <dependency name="sqlite3.0" />
         <dependency name="z" />
         <dependency name="z.1.2.5" />
         <dependency name="c++" />
@@ -58,6 +58,7 @@
         OpenGLES.framework
         OpenAL.framework
         UIKit.framework in Frameworks -->
+        
         
         <template path="templates" />
         

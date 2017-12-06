@@ -48,8 +48,8 @@
         ::end::
 
         ::if ENV_TAPDAQ_ENABLED::
-        00B1030E1FD1F6FD00B716D1 /* Tapdaq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */; };
-        00B1030F1FD1F6FD00B716D1 /* Tapdaq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        00B1031A1FD89DF800B716D1 /* Tapdaq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B103191FD89DF700B716D1 /* Tapdaq.framework */; };
+        00B1031D1FD8A0FF00B716D1 /* Tapdaq.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00B103191FD89DF700B716D1 /* Tapdaq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
         ::if ENV_TPCHARTBOOST_ENABLED::
         00B102ED1FD1B94600B716D1 /* ChartboostAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E01FD1B94100B716D1 /* ChartboostAdapter.framework */; };
         00B102EE1FD1B94600B716D1 /* ChartboostAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E01FD1B94100B716D1 /* ChartboostAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -116,7 +116,6 @@
             dstPath = "";
             dstSubfolderSpec = 10;
             files = (
-                00B1030F1FD1F6FD00B716D1 /* Tapdaq.framework in Embed Frameworks */,
                 ::if ENV_TPRECEPTIV_ENABLED::
                 00B102FE1FD1B94700B716D1 /* ReceptivAdapter.framework in Embed Frameworks */,
                 ::end::
@@ -156,6 +155,16 @@
                 ::end::
             );
             name = "Embed Frameworks";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        00B1031C1FD8A0F200B716D1 /* CopyFiles */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 10;
+            files = (
+                00B1031D1FD8A0FF00B716D1 /* Tapdaq.framework in CopyFiles */,
+            );
             runOnlyForDeploymentPostprocessing = 0;
         };
 /* End PBXCopyFilesBuildPhase section */
@@ -212,7 +221,7 @@
         ::end::
 
         ::if ENV_TAPDAQ_ENABLED::
-        00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tapdaq.framework; path = "::APP_FILE::/Classes/Tapdaq.framework"; sourceTree = "<group>"; };
+        00B103191FD89DF700B716D1 /* Tapdaq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tapdaq.framework; path = "::APP_FILE::/Classes/Tapdaq.framework"; sourceTree = "<group>"; };
         ::if ENV_TPCHARTBOOST_ENABLED::
         00B102E01FD1B94100B716D1 /* ChartboostAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChartboostAdapter.framework; path = "::APP_FILE::/Classes/ChartboostAdapter.framework"; sourceTree = "<group>"; };
         ::end::
@@ -294,7 +303,7 @@
                 ::end::
 
                 ::if ENV_TAPDAQ_ENABLED::
-                00B1030E1FD1F6FD00B716D1 /* Tapdaq.framework in Frameworks */,
+                00B1031A1FD89DF800B716D1 /* Tapdaq.framework in Frameworks */,
                 ::if ENV_TPRECEPTIV_ENABLED::
                 00B102FD1FD1B94700B716D1 /* ReceptivAdapter.framework in Frameworks */,
                 ::end::
@@ -384,6 +393,9 @@
                 ::if ENV_VUNGLE_ENABLED::
                 41730DBA1BFF5B1000A82A87 /* VungleSDK.embeddedframework */,
                 ::end::
+                ::if ENV_TAPDAQ_ENABLED::
+                00B103191FD89DF700B716D1 /* Tapdaq.framework */,
+                ::end::
 
 				::ADDL_PBX_FRAMEWORK_GROUP::
 			);
@@ -394,7 +406,6 @@
 			isa = PBXGroup;
 			children = (
                 ::if ENV_TAPDAQ_ENABLED::
-                00B1030D1FD1F6FD00B716D1 /* Tapdaq.framework */,
                 ::if ENV_TPTAPJOY_ENABLED::
                 00B103071FD1B98B00B716D1 /* TapjoyResources.bundle */,
                 ::end::
@@ -503,6 +514,7 @@
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
                 ::if ENV_TAPDAQ_ENABLED::
                 00B102DF1FD1B90900B716D1 /* Embed Frameworks */,
+                00B1031C1FD8A0F200B716D1 /* CopyFiles */,
                 ::end::
 			);
 			buildRules = (

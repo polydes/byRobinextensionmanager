@@ -71,6 +71,7 @@
         ::if ENV_TPMOPUB_ENABLED::
         00B102F71FD1B94600B716D1 /* MoPubAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */; };
         00B102F81FD1B94600B716D1 /* MoPubAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        00B103231FD9DAE400B716D1 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00B103221FD9DAE400B716D1 /* MRAID.bundle */; };
         ::end::
         ::if ENV_TPAPPLOVIN_ENABLED::
         00B102F91FD1B94600B716D1 /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B102E61FD1B94400B716D1 /* AppLovinAdapter.framework */; };
@@ -237,6 +238,7 @@
         ::end::
         ::if ENV_TPMOPUB_ENABLED::
         00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubAdapter.framework; path = "::APP_FILE::/Classes/MoPubAdapter.framework"; sourceTree = "<group>"; };
+        00B103221FD9DAE400B716D1 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MRAID.bundle; path = "::APP_FILE::/Classes/MRAID.bundle"; sourceTree = "<group>"; };
         ::end::
         ::if ENV_TPAPPLOVIN_ENABLED::
         00B102E61FD1B94400B716D1 /* AppLovinAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinAdapter.framework; path = "::APP_FILE::/Classes/AppLovinAdapter.framework"; sourceTree = "<group>"; };
@@ -313,7 +315,7 @@
                 ::if ENV_TPAPPLOVIN_ENABLED::
                 00B102F91FD1B94600B716D1 /* AppLovinAdapter.framework in Frameworks */
                 ::end::
-                ::if ENV_TPMOPUB_ENABLED::,
+                ::if ENV_TPMOPUB_ENABLED::
                 00B102F71FD1B94600B716D1 /* MoPubAdapter.framework in Frameworks */,
                 ::end::
                 ::if ENV_TPADCOLONY_ENABLED::
@@ -433,6 +435,7 @@
                 ::end::
                 ::if ENV_TPMOPUB_ENABLED::
                 00B102E51FD1B94300B716D1 /* MoPubAdapter.framework */,
+                00B103221FD9DAE400B716D1 /* MRAID.bundle */,
                 ::end::
                 ::if ENV_TPRECEPTIV_ENABLED::
                 00B102E81FD1B94500B716D1 /* ReceptivAdapter.framework */,
@@ -597,6 +600,9 @@
                 ::end::
                 ::if ENV_TPTAPJOY_ENABLED::
                 00B103081FD1B98C00B716D1 /* TapjoyResources.bundle in Resources */,
+                ::end::
+                ::if ENV_TPMOPUB_ENABLED::
+                00B103231FD9DAE400B716D1 /* MRAID.bundle in Resources */,
                 ::end::
 			);
 			runOnlyForDeploymentPostprocessing = 0;

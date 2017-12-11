@@ -313,7 +313,7 @@
                 00B102FB1FD1B94600B716D1 /* InMobiAdapter.framework in Frameworks */,
                 ::end::
                 ::if ENV_TPAPPLOVIN_ENABLED::
-                00B102F91FD1B94600B716D1 /* AppLovinAdapter.framework in Frameworks */
+                00B102F91FD1B94600B716D1 /* AppLovinAdapter.framework in Frameworks */,
                 ::end::
                 ::if ENV_TPMOPUB_ENABLED::
                 00B102F71FD1B94600B716D1 /* MoPubAdapter.framework in Frameworks */,

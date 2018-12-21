@@ -4,7 +4,7 @@ For Stencyl 3.4 and above
 
 Stencyl extension for “Extension Support”  for iOS and Android. This extension allows you to easily integrate enable features for different extensions on your Stencyl game / application. (http://www.stencyl.com)
 
-## Importent
+## Important
 
 Download, Install and Enable this extension to get the following extension to work:<br>
 –AppLovin<br> 
@@ -19,15 +19,11 @@ Download, Install and Enable this extension to get the following extension to wo
 
 ## How to Install
 
-Go To: http://byrobin.nl/store/product/byrobin-extension-manager-stencylopenfl/
+To install this Engine Extension, go to the toolset (byRobin Extension Mananger) in the Extension menu of your game inside Stencyl.<br/>
+Select the Engine Extension from the left menu and click on "Download"
 
-Add the extension to the cart en proceed with checkout. After you successfully placed the order, you will get an e-mail with the download link or go to “<strong>My Account</strong>” section where you can also find the download link.
-
-Or
-
-Use "Download Zip" on this page
-
-Install the zip file: Go to : http://community.stencyl.com/index.php/topic,30432.0.html
+If you not have byRobin Extension Mananger installed, install this first.
+Go to: [https://byrobingames.github.io](https://byrobingames.github.io)
 
 ## Documentation
 

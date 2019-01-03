@@ -6,10 +6,6 @@
 	<string>::ENV_APPLOVIN_SDKKEY::</string>::end::
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	::if (languages != null)::<key>CFBundleLocalizations</key>
-	<array>::foreach languages::
-		<string>::__current__::</string>::end::
-	</array>::end::
 	<key>CFBundleDisplayName</key>
 	<string>::APP_TITLE::</string>
 	<key>CFBundleExecutable</key>
@@ -36,20 +32,23 @@
 	<string>This app needs access to photos.</string>::end::
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	::if (IOS_LAUNCH_STORYBOARD != null)::<key>UILaunchStoryboardName</key>
-	<string>::IOS_LAUNCH_STORYBOARD::</string>::end::
 	<key>UIRequiredDeviceCapabilities</key>
 	<dict>
-		::foreach REQUIRED_CAPABILITY::<key>::name::</key>
-		::if value::<true/>::else::<false/>::end::::end::
+		::foreach REQUIRED_CAPABILITY::
+			<key>::name::</key>
+			::if value::<true/>::else::<false/>::end::
+		::end::
+		<key>gamekit</key>
+		<true/>
 	</dict>
-	<key>UIStatusBarHidden</key>
-	<::WIN_FULLSCREEN::/>
 	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
 	<::WIN_FULLSCREEN::/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<::!WIN_FULLSCREEN::/>
-	::if (IOS_APP_ORIENTATION != null)::<key>UISupportedInterfaceOrientations</key>
+	::if (IOS_APP_ORIENTATION != null)::
+	<key>UISupportedInterfaceOrientations</key>
 	::IOS_APP_ORIENTATION::::end::
 	::if ENV_TAPDAQ_ENABLED::
 	<key>LSApplicationQueriesSchemes</key>
@@ -69,25 +68,44 @@
 	<string>Some ad content may access camera to take picture.</string>
 	::end::
 	<key>NSAppTransportSecurity</key>
-	<dict>
-		::if (IOS_ALLOW_INSECURE_HTTP != null)::<key>NSExceptionDomains</key>
-		<dict>
-			::foreach IOS_ALLOW_INSECURE_HTTP::
-			<key>::domain::</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-				<key>NSTemporaryExceptionMinimumTLSVersion</key>
-				<string>TLSv1.1</string>
-			</dict>::end::
-		</dict>::end::
-		::if (IOS_ALLOW_INSECURE_HTTP == null)::<key>NSAllowsArbitraryLoads</key>
-		<true/>
-		::elseif ENV_SIMPLESHARE_ENABLED:: <key>NSAllowsArbitraryLoads</key>
-		<true/>::end::
-	</dict>
-	::if (IOS_NON_EXEMPT_ENCRYPTION != null)::<key>ITSAppUsesNonExemptEncryption</key><::IOS_NON_EXEMPT_ENCRYPTION:: />::end::
+    <dict>
+		<key>NSAllowsArbitraryLoads</key>
+    		<true/>
+    <key>NSExceptionDomains</key>
+    <dict>
+     	::if ENV_TAPDAQ_ENABLED::
+	<key>tapdaq.com</key>
+        <dict>
+        	<!--Include to allow subdomains-->
+            <key>NSIncludesSubdomains</key>
+            <true/>
+            <!--Include to allow HTTP requests-->
+            <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+            <true/>
+        </dict>
+	::end::
+	::if ENV_FACEBOOKADS_ENABLED::<key>facebook.com</key>
+    	<dict>
+        	<key>NSIncludesSubdomains</key>
+        	<true/>                
+        	<key>NSExceptionRequiresForwardSecrecy</key>
+        	<false/>
+    	</dict>
+    	<key>fbcdn.net</key>
+    	<dict>
+        	<key>NSIncludesSubdomains</key>
+        	<true/>
+        	<key>NSExceptionRequiresForwardSecrecy</key>
+        	<false/>
+    	</dict>
+    	<key>akamaihd.net</key>
+    	<dict>
+        	<key>NSIncludesSubdomains</key>
+        	<true/>
+        	<key>NSExceptionRequiresForwardSecrecy</key>
+       		<false/>
+    	</dict>::end::
+    </dict>
+    </dict>
 </dict>
 </plist>

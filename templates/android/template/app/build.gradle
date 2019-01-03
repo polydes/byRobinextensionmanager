@@ -10,6 +10,7 @@ android {
 		targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
 		versionCode Integer.parseInt(project.VERSION_CODE)
 		versionName project.VERSION_NAME
+		multiDexEnabled true
 	}
 	
 	::if KEY_STORE::
@@ -54,6 +55,7 @@ android {
 }
 
 dependencies {
+	compile 'com.android.support:multidex:1.0.1'
 	compile fileTree(dir: 'libs', include: ['*.jar'])
 	::if (ANDROID_LIBRARY_PROJECTS)::::foreach (ANDROID_LIBRARY_PROJECTS)::compile project(':deps:::name::')
 	::end::::end::

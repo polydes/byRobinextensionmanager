@@ -9,6 +9,8 @@
         <android extension="com.byrobin.manager.ByRobinManager" />
     </section>-->
     
+    <!--<template path="templates" if="android" />-->
+    
 	<section if="ios">
         
         <echo value='|----------------------------------------------------------------------------|' />
@@ -59,8 +61,8 @@
         OpenAL.framework
         UIKit.framework in Frameworks -->
         
-        
-        <template path="templates" />
+        <template path="templates/legacy" if="openfl-legacy || lime-legacy"/>
+        <template path="templates/" unless="openfl-legacy || lime-legacy"/>
         
 	</section>
 </project>

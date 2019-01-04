@@ -85,7 +85,7 @@
 		</dict>::end::
 		::if (IOS_ALLOW_INSECURE_HTTP == null)::<key>NSAllowsArbitraryLoads</key>
 		<true/>
-		::elseif ENV_SIMPLESHARE_ENABLED:: <key>NSAllowsArbitraryLoads</key>
+		::elseif ENV_WEBVIEW_ENABLED:: <key>NSAllowsArbitraryLoads</key>
 		<true/>::end::
 	</dict>
 	::if (IOS_NON_EXEMPT_ENCRYPTION != null)::<key>ITSAppUsesNonExemptEncryption</key><::IOS_NON_EXEMPT_ENCRYPTION:: />::end::

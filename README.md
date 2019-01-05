@@ -31,6 +31,8 @@ This extension comes with a few usefull blocks to use with http://ip-api.com
 
 http://ip-api.com is free to use up to 150 request per minute.
 
+The blocks works on all platforms.
+
 ### Blocks
 
 **Get users location info** <br/>

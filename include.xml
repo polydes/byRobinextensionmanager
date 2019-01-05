@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
     
-    <!--<section if="android">
-        <classpath name="src" />
+    <section if="android">
+        
+        <setenv name="MULTIDEX_ENABLED" value="false" />
+        
+        <!--<classpath name="src" />
         
         <dependency name="byrobinmanager" path="dependencies/byrobinmanager" if="android" />
         
-        <android extension="com.byrobin.manager.ByRobinManager" />
-    </section>-->
-    
-    <!--<template path="templates" if="android" />-->
-    
-	<section if="ios">
+        <android extension="com.byrobin.manager.ByRobinManager" />-->
+        
+        <template path="templates" unless="openfl-legacy || lime-legacy" />
         
         <echo value='|----------------------------------------------------------------------------|' />
         <echo value='| byRobin Extension Manager: enable byRobin Extension Manager when using:    |' />
@@ -19,6 +19,10 @@
         <echo value='| Vungle, Webview2.0                                                         |' />
         <echo value='|----------------------------------------------------------------------------|' />
         
+    </section>
+    
+	<section if="ios">
+      
         <setenv name="BYROBIN_ENABLED" value="true" />
         
         <dependency name="Accelerate.framework" />

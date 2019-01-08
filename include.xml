@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-    
+    <echo value='|----------------------------------------------------------------------------|' />
+	<echo value='| byRobin Extension Manager: enable byRobin Extension Manager when using:    |' />
+	<echo value='| AppLovin, Facebook Ads, Leadbolt, Heyzap, StartApp, Tapdaq, UnityAds,      |' />
+	<echo value='| Vungle, Webview2.0                                                         |' />
+	<echo value='|----------------------------------------------------------------------------|' />
+		
     <section if="android">
         
-        <setenv name="MULTIDEX_ENABLED" value="false" />
+        <!--<setenv name="MULTIDEX_ENABLED" value="false" />-->
         
         <!--<classpath name="src" />
         
@@ -11,15 +16,10 @@
         
         <android extension="com.byrobin.manager.ByRobinManager" />-->
         
-        <template path="templates" unless="openfl-legacy || lime-legacy" />
-        
-        <echo value='|----------------------------------------------------------------------------|' />
-        <echo value='| byRobin Extension Manager: enable byRobin Extension Manager when using:    |' />
-        <echo value='| AppLovin, Facebook Ads, Leadbolt, Heyzap, StartApp, Tapdaq, UnityAds,      |' />
-        <echo value='| Vungle, Webview2.0                                                         |' />
-        <echo value='|----------------------------------------------------------------------------|' />
-        
-    </section>
+        <!--<template path="templates" unless="openfl-legacy || lime-legacy" />-->
+		
+		</section>
+ 
     
 	<section if="ios">
       

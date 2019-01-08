@@ -57,13 +57,14 @@ The blocks works on all platforms.
 - 2019-01-03(0.1.9) Updated iOS  lime template for support iPhone X (only on Stencyl 3.5)
 - 2019-01-04(0.2.0) Enable NSAllowsArbitraryLoads for Webview extension
 - 2019-01-05(0.2.1) Added some usefull blocks for all platforms to use http://ip-api.com (see documentation)
+- 2019-01-08(0.2.2) Fix: Android  apk is not "zipaligned"  when up upload to googleplay
 
 ## Submitting a Pull Request
 
 This software is opensource.<br/>
 If you want to contribute you can make a pull request
 
-Repository: [https://github.com/byrobingames/applovin](https://github.com/byrobingames/byRobinextensionmanager)
+Repository: [https://github.com/byrobingames/byRobinextensionmanager](https://github.com/byrobingames/byRobinextensionmanager)
 
 Need help with a pull request?<br/>
 [https://help.github.com/articles/creating-a-pull-request/](https://help.github.com/articles/creating-a-pull-request/)
@@ -71,7 +72,7 @@ Need help with a pull request?<br/>
 ### ANY ISSUES?
 
 Add the issue on GitHub<br/>
-Repository: [https://github.com/byrobingames/applovin/issues](https://github.com/byrobingames/byRobinextensionmanager/issues)
+Repository: [https://github.com/byrobingames/byRobinextensionmanager/issues](https://github.com/byrobingames/byRobinextensionmanager/issues)
 
 Need help with creating a issue?<br/>
 [https://help.github.com/articles/creating-an-issue/](https://help.github.com/articles/creating-an-issue/)

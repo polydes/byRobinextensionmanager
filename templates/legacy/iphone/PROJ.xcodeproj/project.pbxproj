@@ -37,16 +37,6 @@
         ::if ENV_STARTAPP_ENABLED::419361371CA57F6200649587 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 419361361CA57F6200649587 /* StartApp.bundle */; };
         ::end::
 
-        ::if ENV_VUNGLE_ENABLED::
-        41730DC31BFF5B1000A82A87 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 41730DBC1BFF5B1000A82A87 /* __vungle.db */; };
-        41730DC41BFF5B1000A82A87 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DBD1BFF5B1000A82A87 /* vg_close.png */; };
-        41730DC51BFF5B1000A82A87 /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DBE1BFF5B1000A82A87 /* vg_cta.png */; };
-        41730DC61BFF5B1000A82A87 /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DBF1BFF5B1000A82A87 /* vg_mute_off.png */; };
-        41730DC71BFF5B1000A82A87 /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DC01BFF5B1000A82A87 /* vg_mute_on.png */; };
-        41730DC81BFF5B1000A82A87 /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 41730DC11BFF5B1000A82A87 /* vg_privacy.png */; };
-        41730DC91BFF5B1000A82A87 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41730DC21BFF5B1000A82A87 /* VungleSDK.framework */; };
-        ::end::
-
         ::if ENV_TAPDAQ_ENABLED::
         00B1031A1FD89DF800B716D1 /* Tapdaq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B103191FD89DF700B716D1 /* Tapdaq.framework */; };
         00B1031D1FD8A0FF00B716D1 /* Tapdaq.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00B103191FD89DF700B716D1 /* Tapdaq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -211,16 +201,6 @@
         ::if ENV_STARTAPP_ENABLED::419361361CA57F6200649587 /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = StartApp.bundle ; path = "::APP_FILE::/Classes/StartApp.bundle"; sourceTree = "<group>"; };
         ::end::
 
-        ::if ENV_VUNGLE_ENABLED::
-        41730DBC1BFF5B1000A82A87 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
-        41730DBD1BFF5B1000A82A87 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
-        41730DBE1BFF5B1000A82A87 /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
-        41730DBF1BFF5B1000A82A87 /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
-        41730DC01BFF5B1000A82A87 /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
-        41730DC11BFF5B1000A82A87 /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
-        41730DC21BFF5B1000A82A87 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
-        ::end::
-
         ::if ENV_TAPDAQ_ENABLED::
         00B103191FD89DF700B716D1 /* Tapdaq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tapdaq.framework; path = "::APP_FILE::/Classes/Tapdaq.framework"; sourceTree = "<group>"; };
         ::if ENV_TPCHARTBOOST_ENABLED::
@@ -299,10 +279,6 @@
 				1EEEBB00121BE2B30048A9DF /* Foundation.framework in Frameworks */,
 				1EEEBAB3121AF2880048A9D0 /* CoreMotion.framework in Frameworks */,
 				1EEEBAB3121AF2880048A9D1 /* MediaPlayer.framework in Frameworks */,
-
-                ::if ENV_VUNGLE_ENABLED::
-                41730DC91BFF5B1000A82A87 /* VungleSDK.framework in Frameworks */,
-                ::end::
 
                 ::if ENV_TAPDAQ_ENABLED::
                 00B1031A1FD89DF800B716D1 /* Tapdaq.framework in Frameworks */,
@@ -391,10 +367,6 @@
                 41E3145B1E50A4B9007F907E /* MessageUI.framework */,
                 41E314591E50A4AB007F907E /* iAd.framework */,
                 ::end::
-
-                ::if ENV_VUNGLE_ENABLED::
-                41730DBA1BFF5B1000A82A87 /* VungleSDK.embeddedframework */,
-                ::end::
                 ::if ENV_TAPDAQ_ENABLED::
                 00B103191FD89DF700B716D1 /* Tapdaq.framework */,
                 ::end::
@@ -478,32 +450,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-
-        ::if ENV_VUNGLE_ENABLED::
-        41730DBA1BFF5B1000A82A87 /* VungleSDK.embeddedframework */ = {
-            isa = PBXGroup;
-            children = (
-                41730DBB1BFF5B1000A82A87 /* Resources */,
-                41730DC21BFF5B1000A82A87 /* VungleSDK.framework */,
-            );
-            name = VungleSDK.embeddedframework;
-            path = "::APP_FILE::/Classes/VungleSDK.embeddedframework";
-            sourceTree = "<group>";
-        };
-        41730DBB1BFF5B1000A82A87 /* Resources */ = {
-            isa = PBXGroup;
-            children = (
-                41730DBC1BFF5B1000A82A87 /* __vungle.db */,
-                41730DBD1BFF5B1000A82A87 /* vg_close.png */,
-                41730DBE1BFF5B1000A82A87 /* vg_cta.png */,
-                41730DBF1BFF5B1000A82A87 /* vg_mute_off.png */,
-                41730DC01BFF5B1000A82A87 /* vg_mute_on.png */,
-                41730DC11BFF5B1000A82A87 /* vg_privacy.png */,
-            );
-            path = Resources;
-            sourceTree = "<group>";
-        };
-        ::end::
 
 /* End PBXGroup section */
 
@@ -589,14 +535,6 @@
 				4257533F1A5EFD8C004AA45B /* Images.xcassets in Resources */,
                 ::if ENV_STARTAPP_ENABLED::
                 419361371CA57F6200649587 /* StartApp.bundle in Resources */,
-                ::end::
-                ::if ENV_VUNGLE_ENABLED::
-                41730DC31BFF5B1000A82A87 /* __vungle.db in Resources */,
-                41730DC71BFF5B1000A82A87 /* vg_mute_on.png in Resources */,
-                41730DC81BFF5B1000A82A87 /* vg_privacy.png in Resources */,
-                41730DC51BFF5B1000A82A87 /* vg_cta.png in Resources */,
-                41730DC41BFF5B1000A82A87 /* vg_close.png in Resources */,
-                41730DC61BFF5B1000A82A87 /* vg_mute_off.png in Resources */,
                 ::end::
                 ::if ENV_TPTAPJOY_ENABLED::
                 00B103081FD1B98C00B716D1 /* TapjoyResources.bundle in Resources */,

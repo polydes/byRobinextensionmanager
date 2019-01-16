@@ -58,6 +58,7 @@ The blocks works on all platforms.
 - 2019-01-04(0.2.0) Enable NSAllowsArbitraryLoads for Webview extension
 - 2019-01-05(0.2.1) Added some usefull blocks for all platforms to use http://ip-api.com (see documentation)
 - 2019-01-08(0.2.2) Fix: Android  apk is not "zipaligned"  when up upload to googleplay
+- 2019-01-13(0.2.3) Updated for Vungle Extension 0.0.6
 
 ## Submitting a Pull Request
 

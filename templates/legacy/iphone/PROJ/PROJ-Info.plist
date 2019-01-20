@@ -29,6 +29,8 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Advertisement would like to use bluetooth.</string>::end::
 	::if ENV_SIMPLESHARE_ENABLED::<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to photos.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>This app needs access to photos.</string>::end::
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -87,7 +89,7 @@
 	::if ENV_FACEBOOKADS_ENABLED::<key>facebook.com</key>
     	<dict>
         	<key>NSIncludesSubdomains</key>
-        	<true/>                
+        	<true/>
         	<key>NSExceptionRequiresForwardSecrecy</key>
         	<false/>
     	</dict>

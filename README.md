@@ -60,6 +60,7 @@ The blocks works on all platforms.
 - 2019-01-08(0.2.2) Fix: Android  apk is not "zipaligned"  when up upload to googleplay
 - 2019-01-13(0.2.3) Updated for Vungle Extension 0.0.6
 - 2019-01-20(0.2.4) Added NSPhotoLibraryAddUsageDescription to save image to camera roll with Simple Share extension.
+- 2019-03-24(0.2.5) Updated for Heyzap extension 2.9.2
 
 ## Submitting a Pull Request
 

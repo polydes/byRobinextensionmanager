@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	::if (ENV_ADMOB_APP_ID != null)::<key>GADApplicationIdentifier</key>
+	<string>::ENV_ADMOB_APP_ID::</string>::end::
 	::if ENV_APPLOVIN_ENABLED::<key>AppLovinSdkKey</key>
 	<string>::ENV_APPLOVIN_SDKKEY::</string>::end::
 	<key>CFBundleDevelopmentRegion</key>

@@ -101,6 +101,7 @@
         ::end::
 
 		::ADDL_PBX_BUILD_FILE::
+        ::if HAS_COCOAPODS::1272FE8DCD2FD9673510A1E7 /* libPods-::APP_FILE::.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F7B8A61F30E0C22415DD55 /* libPods-::APP_FILE::.a */; };::end::
 
 /* End PBXBuildFile section */
 
@@ -258,6 +259,9 @@
         ::end::
 
         ::ADDL_PBX_FILE_REFERENCE::
+        ::if HAS_COCOAPODS::66CF108D2F6627C37CB4E1AF /* Pods-::APP_FILE::.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-::APP_FILE::.release.xcconfig"; path = "Target Support Files/Pods-::APP_FILE::/Pods-::APP_FILE::.release.xcconfig"; sourceTree = "<group>"; };
+        C0F7B8A61F30E0C22415DD55 /* libPods-::APP_FILE::.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-::APP_FILE::.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+        F3C430B8412CD3933A47320A /* Pods-::APP_FILE::.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-::APP_FILE::.debug.xcconfig"; path = "Target Support Files/Pods-::APP_FILE::/Pods-::APP_FILE::.debug.xcconfig"; sourceTree = "<group>"; };::end::
 
 		8D1107310486CEB800E47090 /* ::APP_FILE::-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "::APP_FILE::/::APP_FILE::-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -334,6 +338,7 @@
                 ::end::
 
 				::ADDL_PBX_FRAMEWORKS_BUILD_PHASE::
+                ::if HAS_COCOAPODS::1272FE8DCD2FD9673510A1E7 /* libPods-::APP_FILE::.a in Frameworks */,::end::
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +391,7 @@
                 ::end::
 
 				::ADDL_PBX_FRAMEWORK_GROUP::
+                ::if HAS_COCOAPODS::C0F7B8A61F30E0C22415DD55 /* libPods-::APP_FILE::.a */,::end::
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+                ::if HAS_COCOAPODS::EB959724EB3409E44CC9974C /* Pods */,::end::
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -467,6 +474,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+        ::if HAS_COCOAPODS::EB959724EB3409E44CC9974C /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                F3C430B8412CD3933A47320A /* Pods-::APP_FILE::.debug.xcconfig */,
+                66CF108D2F6627C37CB4E1AF /* Pods-::APP_FILE::.release.xcconfig */,
+            );
+            name = Pods;
+            path = Pods;
+            sourceTree = "<group>";
+        };::end::
 
 /* End PBXGroup section */
 
@@ -475,6 +492,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "::APP_FILE::" */;
 			buildPhases = (
+                ::if HAS_COCOAPODS::30633B847727F337433D36DA /* [CP] Check Pods Manifest.lock */,::end::
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
@@ -527,6 +545,7 @@
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+            ::if HAS_COCOAPODS::productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;::end::
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -560,7 +579,32 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
+::if HAS_COCOAPODS::
+/* Begin PBXShellScriptBuildPhase section */
+        30633B847727F337433D36DA /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-::APP_FILE::-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+/* End PBXShellScriptBuildPhase section */
+::end::
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -669,6 +713,7 @@
 		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {/* Build configuration list for PBXNativeTarget "::APP_TITLE::" */
 			isa = XCBuildConfiguration;
+            ::if HAS_COCOAPODS::baseConfigurationReference = F3C430B8412CD3933A47320A /* Pods-::APP_FILE::.debug.xcconfig */;::end::
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				::if (IOS_LAUNCH_STORYBOARD == null)::ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;::end::
@@ -718,6 +763,7 @@
 					"\"$(SRCROOT)/::APP_FILE::/lib/x86_64\"",
 				);
 				OTHER_LDFLAGS = (
+                    ::if HAS_COCOAPODS::"$(inherited)",::end::
 					::foreach ndlls:: "-l::name::",
 					::end::
 					::foreach linkedLibraries:: "-l::__current__::",
@@ -734,6 +780,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {/* Build configuration list for PBXNativeTarget "::APP_TITLE::" */
 			isa = XCBuildConfiguration;
+            ::if HAS_COCOAPODS::baseConfigurationReference = 66CF108D2F6627C37CB4E1AF /* Pods-::APP_FILE::.release.xcconfig */;::end::
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				::if (IOS_LAUNCH_STORYBOARD == null)::ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;::end::
@@ -778,6 +825,7 @@
 					"\"$(SRCROOT)/::APP_FILE::/lib/x86_64\"",
 				);
 				OTHER_LDFLAGS = (
+                    ::if HAS_COCOAPODS::"$(inherited)",::end::
 					::foreach ndlls:: "-l::name::",
 					::end::
 					::foreach linkedLibraries:: "-l::__current__::",

@@ -4,4 +4,4 @@ author=Robin Schaafsma
 website=https://byrobingames.github.io
 version=0.2.6
 compatibility=all
-dependencies=toolset-com.byrobingames.manager-0.1.0,stencyl-4.1.0
+dependencies=toolset-com.byrobingames.manager-0.1.7,stencyl-4.1.0-b11005
